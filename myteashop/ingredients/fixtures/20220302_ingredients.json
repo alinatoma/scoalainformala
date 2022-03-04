@@ -1,0 +1,100 @@
+[
+{
+  "model": "ingredients.ingredient",
+  "pk": 1,
+  "fields": {
+    "ingredient_name": "White Tea",
+    "description": "White Tea leaves",
+    "quantity": 44,
+    "image_ingredient": "ingredient_images/white_tea.PNG",
+    "distributor": 1,
+    "created_at": "2022-03-01T19:07:35.511Z",
+    "updated_at": "2022-03-01T19:07:35.511Z",
+    "active": true
+  }
+},
+{
+  "model": "ingredients.ingredient",
+  "pk": 2,
+  "fields": {
+    "ingredient_name": "Festive Tea",
+    "description": "Festive tea for Christmas",
+    "quantity": 18,
+    "image_ingredient": "ingredient_images/festive_tea.PNG",
+    "distributor": 2,
+    "created_at": "2022-03-01T19:09:14.987Z",
+    "updated_at": "2022-03-01T19:09:14.987Z",
+    "active": true
+  }
+},
+{
+  "model": "ingredients.ingredient",
+  "pk": 3,
+  "fields": {
+    "ingredient_name": "Turmeric Spice",
+    "description": "Turmeric tea from India",
+    "quantity": 28,
+    "image_ingredient": "ingredient_images/turmeric_spice.PNG",
+    "distributor": 6,
+    "created_at": "2022-03-01T19:10:58.767Z",
+    "updated_at": "2022-03-01T19:10:58.767Z",
+    "active": true
+  }
+},
+{
+  "model": "ingredients.ingredient",
+  "pk": 4,
+  "fields": {
+    "ingredient_name": "Mary Grey",
+    "description": "Black tea from Ceylon",
+    "quantity": 39,
+    "image_ingredient": "ingredient_images/mary_grey.PNG",
+    "distributor": 5,
+    "created_at": "2022-03-01T19:17:33.189Z",
+    "updated_at": "2022-03-01T19:17:33.189Z",
+    "active": true
+  }
+},
+{
+  "model": "ingredients.ingredient",
+  "pk": 5,
+  "fields": {
+    "ingredient_name": "Matcha Green Tea",
+    "description": "Japanese Matcha Green Tea",
+    "quantity": 45,
+    "image_ingredient": "ingredient_images/matcha_tea.PNG",
+    "distributor": 4,
+    "created_at": "2022-03-01T19:19:09.650Z",
+    "updated_at": "2022-03-01T19:19:09.650Z",
+    "active": true
+  }
+},
+{
+  "model": "ingredients.ingredient",
+  "pk": 6,
+  "fields": {
+    "ingredient_name": "Masala Chai",
+    "description": "Masala Chai from Sri Lanka",
+    "quantity": 46,
+    "image_ingredient": "ingredient_images/masala_chai.PNG",
+    "distributor": 5,
+    "created_at": "2022-03-01T19:21:32.686Z",
+    "updated_at": "2022-03-01T19:21:32.686Z",
+    "active": true
+  }
+},
+{
+  "model": "ingredients.ingredient",
+  "pk": 7,
+  "fields": {
+    "ingredient_name": "Herbal Tea Blend",
+    "description": "Herbal Tea from China",
+    "quantity": 38,
+    "image_ingredient": "ingredient_images/herbal_tea.PNG",
+    "distributor": 1,
+    "created_at": "2022-03-01T19:22:52.462Z",
+    "updated_at": "2022-03-01T19:22:52.462Z",
+    "active": true
+  }
+}
+]

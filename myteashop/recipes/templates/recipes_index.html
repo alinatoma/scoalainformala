@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+<!--{% load static %}-->
+
+{% block content %}
+<br>
+    <a class="btn btn-success" href="{% url 'recipes:adauga' %}">Add new recipe</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Recipe Name</th>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for item in recipe_list %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ item.recipe_name }}</td>
+                <td>{{ item.ingredient }}</td>
+                <td>{{ item.quantity }}</td>
+                <td><a class ="btn btn-info" href="{% url 'recipes:modifica' item.id %}">Update</a>
+                    <a class="btn btn-success" href="{% url 'recipes:prepara' item.id %}">Prepare</a>
+                    <a class="btn btn-danger" href="{% url 'recipes:dezactiveaza' item.id %}">Delete</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {% if is_paginated %}
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+                <li><a class="btn" href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+            {% else %}
+                <li class="disabled btn"><span>&laquo;</span></li>
+            {% endif %}
+            {% for i in paginator.page_range %}
+                {% if page_obj.number == i %}
+                    <li class="active btn btn-info"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                {% else %}
+                    <li><a class="btn" href="?page={{ i }}">{{ i }}</a></li>
+                {% endif %}
+
+            {% endfor %}
+            {% if page_obj.has_next %}
+                <li><a class="btn" href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+            {% else %}
+                <li class="disabled btn"><span>&raquo;</span></li>
+            {% endif %}
+            <span class="align-right">Showing {{ page_obj.start_index }}-{{ page_obj.end_index }} of {{ page_obj.paginator.count }}</span>
+        </ul>
+    {% endif %}
+
+{% endblock %}

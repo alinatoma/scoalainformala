@@ -1,0 +1,75 @@
+[
+{
+  "model": "distributors.distributors",
+  "pk": 1,
+  "fields": {
+    "distributor_name": "Demmers",
+    "city": "Cluj-Napoca",
+    "country": "Romania",
+    "email": "demmers@teehaus.com",
+    "phone": "0752228764",
+    "active": true
+  }
+},
+{
+  "model": "distributors.distributors",
+  "pk": 2,
+  "fields": {
+    "distributor_name": "Tea Makers",
+    "city": "London",
+    "country": "Great Britain",
+    "email": "alina.th90@gmail.com",
+    "phone": "+44322284923",
+    "active": true
+  }
+},
+{
+  "model": "distributors.distributors",
+  "pk": 3,
+  "fields": {
+    "distributor_name": "Tucano",
+    "city": "Timisoara",
+    "country": "Romania",
+    "email": "tucano@mail.com",
+    "phone": "0745373806",
+    "active": true
+  }
+},
+
+{
+  "model": "distributors.distributors",
+  "pk": 4,
+  "fields": {
+    "distributor_name": "Stash",
+    "city": "Bucharest",
+    "country": "Romania",
+    "email": "stash@gmail.com",
+    "phone": "0740788654",
+    "active": true
+  }
+},
+{
+  "model": "distributors.distributors",
+  "pk": 5,
+  "fields": {
+    "distributor_name": "Rare Tea",
+    "city": "Munchen",
+    "country": "Germany",
+    "email": "raretea@email.com",
+    "phone": "+44433765765",
+    "active": true
+  }
+},
+{
+  "model": "distributors.distributors",
+  "pk": 6,
+  "fields": {
+    "distributor_name": "Rishi Tea",
+    "city": "Mumbai",
+    "country": "India",
+    "email": "rishi_tea@email.com",
+    "phone": "+91755987224",
+    "active": true
+  }
+}
+]

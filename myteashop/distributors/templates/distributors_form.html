@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    td { text-align: right;}
+    th { height: 0px; }
+    table { width: 50%; }
+</style>
+<br>
+<table>
+    <tr>
+        <td>
+            <img src="{% static 'images/Img2.jpg' %}" alt="Distributors">
+        </td>
+        <td>
+
+        </td>
+        <td>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                <table class="table" align="left">
+                    <th>{{ field.label }}</th>
+                    <td>{{ field }}</td>
+                </table>
+                {% endfor %}
+                <button type="submit">Save</button>
+            </form>
+        </td>
+    </tr>
+</table>
+{% endblock %}
